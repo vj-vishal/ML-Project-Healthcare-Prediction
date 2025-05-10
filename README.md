@@ -14,8 +14,10 @@ premiums based on factors like age, smoking habits, BMI, and medical history and
 - **Income level** : General income classification('<10L','10L - 25L','> 40L','25L - 40L')
 - **Income lakhs** : Exact annual income in lakhs of rupees
 - **Medical History** : Summarized medical history or pre-existing conditions('Diabetes', 'High blood pressure', 'No Disease',
-                                                                              'Diabetes & High blood pressure', 'Thyroid', 'Heart disease'
-                                                                              'High blood pressure & Heart disease', 'Diabetes & Thyroid',
+                                                                              'Diabetes & High blood pressure', 'Thyroid', 
+                                                                               'Heart disease'
+                                                                              'High blood pressure & Heart disease', 
+                                                                              'Diabetes & Thyroid',
                                                                               'Diabetes & Heart disease')
 - **Insurance Plan** : Type of insurance plan selected by the user('Bronze', 'Silver', 'Gold')
 - **Genetical Risk** : Indicates the individual's inherited predisposition to certain diseases or health conditions based on family history or genetic testing
@@ -45,12 +47,43 @@ premiums based on factors like age, smoking habits, BMI, and medical history and
 ## Insights  
 The model is segmented into two age-based groups(18-25 and 26-100) to reduce prediction error, as the project aims to maintain a margin of error below 10%. However, initial results showed that approximately 30% of customers exceeded this threshold, with some errors surpassing 80%.
 ## Results
-**For age group(18-25)** :
-Feature Importance : 
+**For age group(18-25)** :  
+  
+1. Feature Importance : 
+
+<img width="649" alt="Image" src="https://github.com/user-attachments/assets/b018b552-35f5-4fc8-ac4c-be672e3ac8ef" /><b>
+
+2. Best Performing model : Linear Regression  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R2 Score = 98%  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RSME = 292.80
+
+**For age group(26-100)** :  
+
+1. Feature Importance :
+
+<img width="632" alt="Image" src="https://github.com/user-attachments/assets/44fefd7c-299d-4ee9-a278-45cb1c1da3a4" /><b>
+
+2. Best Performing model : XGBoost Regressor  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R2 Score = 99.7%  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RSME = 353.73
+
+## Future Improvements
+- Experimenting with orher advanced models.
+- Deploying the core model as an API using frameworks like FastAPI or Flask.
+
+## Conclusion  
+This project provides valueable insights into healthcare insurance prediction, helping insurance company to predict premium healthcare insurance productivily by leveraging machine learning models.
+
+## Streamlit 
+https://ml-project-healthcare-prediction.streamlit.app/
+
+## Contact
+Linkedln: https://www.linkedin.com/in/vishaljaiswalvj/  
+Email: vishaljaiswal529@gmail.com
 
 
 
-Best Performing model : 
+
 
 
 
