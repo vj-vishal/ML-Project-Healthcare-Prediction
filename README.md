@@ -45,7 +45,12 @@ premiums based on factors like age, smoking habits, BMI, and medical history and
 ## Insights  
 The model is segmented into two age-based groups(18-25 and 26-100) to reduce prediction error, as the project aims to maintain a margin of error below 10%. However, initial results showed that approximately 30% of customers exceeded this threshold, with some errors surpassing 80%.
 ## Results
+**For age group(18-25)** :
+Feature Importance : 
 
+
+
+Best Performing model : 
 
 
 
